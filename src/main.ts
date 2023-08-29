@@ -20,3 +20,19 @@ function showInformation(name: string = "Daniel"):void{
 function error():never {
   throw new Error("error"); 
 }
+
+//array
+let items: number[]
+items = [1,2,3]
+
+//tuple
+ let cards: [number, string, boolean]
+ cards = [1,"Daniel",true]
+
+ //enum
+ enum Colors{
+  white= "#fff",
+  black="#000",
+ }
+let white: Colors= Colors.black
+console.log(white)
