@@ -46,3 +46,12 @@ function showPet(pet:'dog'| 'cat'| 'zebra') {
   console.log(pet)
 }
 showPet('zebra')
+
+//type aliases
+
+type Pet ='cat'| 'dog'
+
+function displayPet(pet: Pet) {
+  console.log(pet)
+}
+displayPet('cat')
