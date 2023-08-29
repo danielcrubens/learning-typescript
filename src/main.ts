@@ -36,3 +36,13 @@ items = [1,2,3]
  }
 let white: Colors= Colors.black
 console.log(white)
+
+//type union
+let age: number | string
+age =20
+age= "vinte"
+
+function showPet(pet:'dog'| 'cat'| 'zebra') {
+  console.log(pet)
+}
+showPet('zebra')
