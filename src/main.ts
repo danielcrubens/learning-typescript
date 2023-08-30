@@ -55,3 +55,21 @@ function displayPet(pet: Pet) {
   console.log(pet)
 }
 displayPet('cat')
+
+/* Tipando objetos */
+
+//interfaces
+ type UF = 'MG' | 'SP'| 'RJ'
+interface User{
+  name: string,
+  address:{
+    city:string
+    UF:UF
+  }
+}
+
+function showCity(user:User) {
+  user.address.UF="MG"
+  return user.address.city
+  
+}
